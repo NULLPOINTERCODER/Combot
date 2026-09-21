@@ -20,12 +20,16 @@ export default function Navbar() {
           <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-tr from-brand-600 to-indigo-500 text-white shadow-md shadow-brand-500/20 transition-transform group-hover:scale-105">
             <Sparkles className="h-4.5 w-4.5" />
           </div>
-          <div>
+          <div className="flex items-center gap-2">
             <span className="text-base font-bold tracking-tight text-slate-900 group-hover:text-brand-600 transition-colors">
               Changelog
             </span>
-            <span className="ml-1.5 hidden rounded-full bg-brand-50 px-2 py-0.5 text-[10px] font-semibold text-brand-700 sm:inline-block border border-brand-200/60">
-              Widget
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-brand-50 px-2.5 py-0.5 text-[10px] font-semibold text-brand-700 border border-brand-200/60 shadow-xs">
+              <span className="relative flex h-1.5 w-1.5">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
+              </span>
+              Live Updates
             </span>
           </div>
         </Link>
